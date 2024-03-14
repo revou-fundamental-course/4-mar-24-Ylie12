@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator BMI</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <!-- <h1>Calculator BMI - Yoko</h1> -->
+    </header>
+    <main>
+        <div class="main-container">
+
+            <!-- Form Display -->
+            <section class="container-item">
+                <h2>Form Data</h2>
+                <p>Berat badan ideal merupakan impian dari semua orang. Tidak hanya memiliki bentuk tubuh 
+                    yang menunjang penampilan, berat badan ideal juga menandakan kondisi tubuh yang sehat. 
+                    Bagaimana denganmu? Yuk, hitung berat badan ideal Anda di kalkulator BMI.</p>
+                <section class="container-form" id="dataform">
+                <!-- bergesar (menyempit) karena form -->
+                <form id="myForm">
+                    <div>
+                        <label><b>Jenis Kelamin</b></label><br />
+                        <input type="radio" id="lk" name="jk"><label for="lk">Laki-laki</label>
+                        <input type="radio" id="pr" name="jk"><label for="pr">Perempuan</label>
+                    </div>
+                    <div>
+                        <label><b>Berat Badan (kg)</b></label><br />
+                        <span style="display: flex;">
+                            <a href="#bb" style="border: 0px solid;"><img src="assets/pen.png" alt="pena"></a>
+                            <input type="number" class="form-item" id="bb" placeholder ="isi berat badan anda">    
+                        </span>  
+                    </div>
+                    <div>
+                        <label><b>Usia (tahun)</b></label><br />
+                        <span style="display: flex;">
+                            <a href="#usia"><img src="assets/pen.png" alt="pena"></a>
+                            <input type="number" class="form-item" id="usia" placeholder ="isi usia anda">
+                        </span>            
+                    </div>
+                    <div>
+                        <label><b>Tinggi Badan (cm)</b></label><br />
+                        <span style="display: flex;">
+                            <a href="#tb"><img src="assets/pen.png" alt="pena"></a>
+                            <input type="number" class="form-item" id="tb" placeholder ="isi tinggi badan anda">  
+                        </span>            
+                    </div>
+                    <div>
+                        <br>
+                        <button type="button" class="calculate-button" onclick="hitung()">Hitung BMI</button>
+                        <button type="button" class="reset-button" onclick="hapus()">Reset</button>
+                    </div>
+                </form>
+                </section>
+                <section class="container-form2">
+                    <h3>Keunggulan Fitur</h3>
+                    <ol style="padding-left: 16px;">
+                        <li>Menghitung berat badan</li>
+                        <li>Menentukan kategori berat badan ideal atau tidak</li>
+                        <li>Mempersiapkan program menurunkan berat badan</li>
+                    </ol>
+                    <p>Kalkulator ini hanya boleh digunakan oleh orang dewasa (<b>wanita hamil</b> atau <b>menyusui</b> tidak 
+                        boleh mengandalkan pembacaan BMI ini) dan tidak ada tindakan yang harus diambil berdasarkan 
+                        nilainya selain berkonsultasi dengan orang yang memenuhi syarat seperti dokter.</p>
+                    <P>Kalkulator akan memberi Anda gambaran tentang perbandingan berat badan Anda dengan nilai umum <i>Body Mass
+                        Index</i> (BMI) dihitung sebagai berat badan Anda (dalam kilogram) dibagi dengan kuadrat tinggi 
+                        badan Anda (dalam meter) atau <b>BMI = kg/m<sup>2</sup></b>
+                    </P>
+                </section>
+            </section>
+
+            <!-- Result Display -->
+            <section class="container-item">
+                <h2>Result</h2>
+                <section class="container-result">
+                    <h3 style="font-weight: 500;">Hasil BMI Kamu :</h3>
+                    <!-- <input type="text" id="hasil" maxlength="4" style="text-align: center;" readonly> -->
+                    <h2 id="hasil">0</h2>
+                    <h4 id="hasil2" style="font-weight: 500;">Kategori Anda</h4>
+                    <button type="button">Download Hasil BMI</button>
+                </section>
+                <section class="container-result2">
+                    <p id="hasil3">Rentang BMI</p>
+                    <hr>
+                    <p id="hasil4">Kategori Anda
+                    <br>
+                    <p>Saran</p>
+                    <button type="button">Konsultasi Dokter Via Aplikasi</button>
+                    <button type="button">Registrasi Online Sekarang</button>
+                    <p>BMI tidak sepenuhnya mewakili diagnosis menyeluruh dari kesehatan tubuh dan resiko penyakit 
+                        seseorang. Anda perlu konsultasi lebih lanjut mengenai resiko dan kekhawatiran Anda terkait 
+                        dengan berat badan Anda.</p>
+                </section>
+                <section class="container-result3">
+                    <h4>Beberapa penyakit yang berasal dari kegemukan</h4>
+                    <p>Diabetes</p>
+                    <p>Hipertensi</p>
+                    <p>Sakit Jantung</p>
+                    <p>Osteoarthritis</p>
+                    <button type="button">Konsultasi Dokter Via Aplikasi</button>
+                    <button type="button">Registrasi Online Sekarang</button>
+                </section>
+                <section class="container-result4">
+                    <h4>Download Aplikasi</h4>
+                    <span>
+                        <a href="https://play.google.com" target="_blank"><img src="assets/gplay.png" class="zoom" alt="google play" style="width: 140px;"></a>
+                        <a href="https://www.apple.com/id/app-store/" target="_blank"><img src="assets/apple.png" class="zoom" alt="apple" style="width: 120px;"></a>
+                    </span>
+                </section>
+            </section>
+        </div>
+    </main>
+    <footer></footer>
+    <script src="js/script.js"></script>
+</body>
+</html>

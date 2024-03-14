@@ -1,0 +1,91 @@
+/* header>h1 {
+    text-align: center;
+    color: black;
+} */
+/* body            {background-image: url(../assets/sun-pattern.png); font-family: monospace, monospace;} */
+body            {background-image: url(../assets/sun-pattern.png); font-family: monospace, monospace;}
+.main-container {display: flex;}
+p               {text-align: justify;}
+img             {width: 25px;}
+img, .form-item {border: 1px inset;}
+
+/* Display Style */
+.container-item {
+    margin-top: -30px;
+    width: 100%;
+    padding: 40px;
+}
+
+.container-form {
+    background-color: lightgrey;
+    padding: 15px 20px 20px 20px;
+}
+    .container-form>div {
+    padding: 8px;
+    }
+    .form-item {
+    height: 24px;
+    background-color: white;
+    }
+
+.container-result, .container-result3 {
+    text-align: center;
+    background-color: lightgrey;
+    padding: 1px 0px 30px 0px;
+}
+.container-result4 {text-align: center;}
+.container-result3>p {
+    text-align: center; 
+    height: 10px;
+}
+
+/* Merapikan */
+.container-result2, .container-result3, .container-result4 {
+    margin-top: -5px;
+}
+.container-form2, .container-form {
+    margin-top: 30px;
+}
+
+/* .container-form2 li {column-gap: 200px; color: blue;} */
+
+/* Button */
+button {
+    border: 0px outset;
+    height: 32px;
+    padding-right: 24px;
+    padding-left: 24px;
+    background-color: #9c9898;
+    border-radius: 8px;
+}
+
+.calculate-button {
+    border: 0px solid;
+    background-color: #363434;
+    color: white;
+}
+.reset-button {
+    border: 0px solid;
+    background-color: white;
+    color: black;
+}
+
+a:hover {
+    transform: scale(1.3);
+}
+
+a img {
+    border: 0;
+}
+
+.zoom, a {transition: transform .2s;}
+.zoom:hover {transform: scale(1.1);}
+
+button:hover {
+    background-color: lightslategray;
+    /* font-size: 14px; */
+}
+
+/* .myForm {
+    padding: auto;
+} */
